@@ -1,6 +1,9 @@
 #editor
 .vscode
 
+#tests
+/coverage
+
 #yarn
 .yarn/*
 !.yarn/cache
