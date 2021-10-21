@@ -2488,13 +2488,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:*, @types/react@npm:^17.0.0":
-  version: 17.0.30
-  resolution: "@types/react@npm:17.0.30"
+  version: 17.0.31
+  resolution: "@types/react@npm:17.0.31"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e3aaac1b8fda6e3622b75db0bd7d8dc412c2f2b77a00afdd32cae8c71fb0b1ca6926ab1fbe1c536dd51d96c0ba372738993837a8df1637637aaab7b86e421b7f
+  checksum: c2ea547b3e3398f53971908ae34bdb1ca1f2d8f1cf57a6f21c37b2bb77c2e625b5349de69b3c573f969056362eddac4bbac075d5d470716feef4161e26692b83
   languageName: node
   linkType: hard
 
@@ -3111,6 +3111,15 @@ __metadata:
   checksum: 5a32d0b3c0944e65d22ff3ae2f88d7a4f8d88a78a703033caeae33f2944915e053d283d02f630dc94823edc7757148ecdcf39fd687a5117bda5c10133a03a7d8
   languageName: node
   linkType: hard
+
+"animated-router-react@portal:..::locator=example%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "animated-router-react@portal:..::locator=example%40workspace%3A."
+  peerDependencies:
+    react: ^17.0.2
+    react-dom: ^17.0.2
+  languageName: node
+  linkType: soft
 
 "ansi-colors@npm:^3.0.0":
   version: 3.2.4
@@ -6453,6 +6462,8 @@ __metadata:
     "@types/node": ^12.0.0
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
+    animated-router-react: "portal:.."
+    eslint-config-react-app: ^6.0.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3

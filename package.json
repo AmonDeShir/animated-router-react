@@ -10,6 +10,9 @@
   "files": [
     "/lib"
   ],
+  "workspaces": [
+    "example"
+  ],
   "scripts": {
     "start": "",
     "test": "jest",
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.30",
     "@types/react-dom": "^17.0.10",
@@ -33,6 +37,7 @@
     "eslint-config-airbnb": "latest",
     "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.25.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
@@ -49,7 +54,7 @@
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation, { Route } from 'animated-router-react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Navigation>
+      <Route
+        path="/"
+        component={<>Page 0</>}
+      />
+
+      <Route
+        path="/1"
+        component={<>Page 1</>}
+      />
+
+      <Route
+        path="/2"
+        component={<>Page 2</>}
+      />
+
+      <Route
+        path="/3"
+        component={<>Page 3</>}
+      />
+
+      Data XDDD
+    </Navigation>
   );
 }
 

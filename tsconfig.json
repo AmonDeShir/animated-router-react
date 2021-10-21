@@ -22,6 +22,7 @@
     "strictBindCallApply": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "downlevelIteration": true,
   },
 	"include": ["src"],
 	"exclude": ["node_modules", "lib", "coverage", "__tests__"],
