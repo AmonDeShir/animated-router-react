@@ -5,7 +5,7 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "repository": "https://github.com/AmonDeShir/react-animated-router",
-  "author": "AmonDeShir",
+  "author": "Dominik Purgał <amonsir29@gmail.com>",
   "license": "MIT",
   "files": [
     "/lib"
@@ -14,8 +14,10 @@
     "example"
   ],
   "scripts": {
-    "start": "",
+    "start": "yarn workspace example start",
     "test": "jest",
+    "lint": "yarn eslint",
+    "prebuild": "rm -rf lib; mkdir lib",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
