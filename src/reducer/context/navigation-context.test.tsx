@@ -16,7 +16,7 @@ describe(`NavigationContext`, () => {
     });
   });
 
-  it(`dispatch should throw error if it is used outside of NavigationProvider`, () => {
+  it(`should throw error if it is used outside of NavigationProvider`, () => {
     const { result } = renderHook(() => useContext(NavigationContext));
 
     expect(() =>
@@ -26,7 +26,7 @@ describe(`NavigationContext`, () => {
     ).toThrowError('Dispatch cannot be use outside of NavigationProvider!');
   });
 
-  it(`dispatch shouldn't throw error if it is used in NavigationProvider`, () => {
+  it(`shouldn't throw error if it is used in NavigationProvider`, () => {
     const { result } = renderHook(() => useContext(NavigationContext), {
       wrapper: NavigationProvider,
     });

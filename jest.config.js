@@ -9,6 +9,7 @@ module.exports = {
   transform: {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "coverage",

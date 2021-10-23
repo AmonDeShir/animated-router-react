@@ -7,11 +7,6 @@ import { NavigationContext } from './reducer/context/navigation-context';
 import Route from './route/route';
 
 describe(`navigation component test`, () => {
-  beforeEach(() => {
-    delete (window as any).location;
-    (window as any).location = new URL('http://localhost/');
-  });
-
   it(`should render component with default route`, () => {
     render(
       <Navigation>
@@ -23,7 +18,7 @@ describe(`navigation component test`, () => {
   });
 
   it(`should render component and select route selected by window.location`, () => {
-    (window as any).location = new URL('http://localhost/test2');
+    window.location.pathname = '/test2';
 
     render(
       <Navigation>
@@ -36,7 +31,8 @@ describe(`navigation component test`, () => {
   });
 
   it(`should render component and select route selected by window.location with argument`, () => {
-    (window as any).location = new URL('http://localhost/test2/test-argument');
+    window.location.pathname = '/test2/test-argument';
+
     let argument = '';
 
     const TestPage = forwardRef(() => {
@@ -218,7 +214,7 @@ describe(`navigation component test`, () => {
   });
 
   it(`should play specific to route exit animation after change route`, async () => {
-    (window as any).location = new URL('http://localhost/test1');
+    window.location.pathname = '/test1';
 
     const testPromise = new Promise<void>((resolve) => {
       render(
@@ -272,7 +268,7 @@ describe(`navigation component test`, () => {
   });
 
   it(`should play specific to route enter animation after change route`, async () => {
-    (window as any).location = new URL('http://localhost/test1');
+    window.location.pathname = '/test1';
 
     const testPromise = new Promise<void>((resolve) => {
       render(

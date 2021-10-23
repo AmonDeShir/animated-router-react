@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:c65e6b91176b55eceb963580693c77edf88cecbcaab001f1bdc7eb430bf58d13bf4ea261f19580c112153919c6a79180e23f050e869fb075d12370ede5794590#npm:4.2.0"],
             ["husky", "npm:7.0.2"],
             ["jest", "virtual:c65e6b91176b55eceb963580693c77edf88cecbcaab001f1bdc7eb430bf58d13bf4ea261f19580c112153919c6a79180e23f050e869fb075d12370ede5794590#npm:27.3.1"],
+            ["jest-location-mock", "npm:1.0.9"],
             ["lint-staged", "npm:11.2.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
@@ -4351,6 +4352,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@jedmao/location", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@jedmao-location-npm-3.0.0-47819b899e-7fa57df689.zip/node_modules/@jedmao/location/",
+          "packageDependencies": [
+            ["@jedmao/location", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@jest/console", [
         ["npm:26.6.2", {
           "packageLocation": "./.yarn/cache/@jest-console-npm-26.6.2-bfe95527e4-69a9ca6ba3.zip/node_modules/@jest/console/",
@@ -6450,6 +6460,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:c65e6b91176b55eceb963580693c77edf88cecbcaab001f1bdc7eb430bf58d13bf4ea261f19580c112153919c6a79180e23f050e869fb075d12370ede5794590#npm:4.2.0"],
             ["husky", "npm:7.0.2"],
             ["jest", "virtual:c65e6b91176b55eceb963580693c77edf88cecbcaab001f1bdc7eb430bf58d13bf4ea261f19580c112153919c6a79180e23f050e869fb075d12370ede5794590#npm:27.3.1"],
+            ["jest-location-mock", "npm:1.0.9"],
             ["lint-staged", "npm:11.2.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
@@ -13713,6 +13724,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-leak-detector", "npm:27.3.1"],
             ["jest-get-type", "npm:27.3.1"],
             ["pretty-format", "npm:27.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["jest-location-mock", [
+        ["npm:1.0.9", {
+          "packageLocation": "./.yarn/cache/jest-location-mock-npm-1.0.9-f6be598975-fdf69457bb.zip/node_modules/jest-location-mock/",
+          "packageDependencies": [
+            ["jest-location-mock", "npm:1.0.9"],
+            ["@jedmao/location", "npm:3.0.0"],
+            ["jest-diff", "npm:27.3.1"]
           ],
           "linkType": "HARD",
         }]

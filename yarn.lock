@@ -1784,6 +1784,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jedmao/location@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@jedmao/location@npm:3.0.0"
+  checksum: 7fa57df6896979ff39685eeae2d917d6e4990b0fa409686330acfd5f239415148a3cbf3c8e06216d592bd3c2e072e224793c61527eca8b5b4aed1e908028a56a
+  languageName: node
+  linkType: hard
+
 "@jest/console@npm:^26.6.2":
   version: 26.6.2
   resolution: "@jest/console@npm:26.6.2"
@@ -3504,6 +3511,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.2
     jest: ^27.3.1
+    jest-location-mock: ^1.0.9
     lint-staged: ^11.2.3
     pinst: ^2.1.6
     prettier: ^2.4.1
@@ -9314,7 +9322,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^27.0.0, jest-diff@npm:^27.3.1":
+"jest-diff@npm:^27.0.0, jest-diff@npm:^27.0.1, jest-diff@npm:^27.3.1":
   version: 27.3.1
   resolution: "jest-diff@npm:27.3.1"
   dependencies:
@@ -9560,6 +9568,16 @@ fsevents@^1.2.7:
     jest-get-type: ^27.3.1
     pretty-format: ^27.3.1
   checksum: ff3ca19d42408cb135069928e1b79d68accd62acb77a36ab9a56ae9de3d20cd0a6c1c98469eda617127d2e780a6a7e5a4e3b9c804c1d6b67afdd65d7270adae4
+  languageName: node
+  linkType: hard
+
+"jest-location-mock@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "jest-location-mock@npm:1.0.9"
+  dependencies:
+    "@jedmao/location": ^3.0.0
+    jest-diff: ^27.0.1
+  checksum: fdf69457bbfb943d54018558be352af347f238c2e04e7d5eb28fddc3110a147060d3b735904bd5c3d53b6bf3b5860d19843f04882d47d2d453df1eac6145dead
   languageName: node
   linkType: hard
 

@@ -17,11 +17,6 @@ const wrapper =
     );
 
 describe(`utils/navigation/usePath`, () => {
-  beforeEach(() => {
-    delete (window as any).location;
-    (window as any).location = new URL('http://localhost/');
-  });
-
   it(`should return selectPath from navigation context`, () => {
     const { result } = renderHook(() => usePaths(), {
       wrapper: wrapper({ selectPath: '/select-path' }),
