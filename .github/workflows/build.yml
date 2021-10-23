@@ -2,21 +2,21 @@ name: build
 on:
   pull_request:
     types:
-    - '*'
+      - '*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-       - name: Checkout
+      - name: Checkout
         uses: actions/checkout@master
         with:
           persist-credentials: false
 
       - name: Install
         run: yarn install
-       - name: Lint
+      - name: Lint
         run: yarn lint
       - name: Build
         run: yarn build
