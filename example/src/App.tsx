@@ -1,29 +1,64 @@
 import Navigation, { Route } from 'animated-router-react';
+import { useRef } from 'react';
+import { enterDown, enterRight, enterUp, exitDown, exitRight, exitUp } from './animations';
+import Header from './components/header/header';
+import LogIn from './pages/log-in';
+import Main from './pages/main';
+import Register from './pages/register';
+import ResetPassword from './pages/reset-password';
 
 function App() {
+  const header = useRef<HTMLDivElement>(null);
+
   return (
     <Navigation>
+      <Header ref={header} />
+
       <Route
         path="/"
-        component={<>Page 0</>}
+        component={<Main />}
+        enterAnimation={{
+          "/log-in": enterUp(header),
+          '/register': enterUp(header),
+        }}
+        exitAnimation={{
+          "/log-in": exitDown(header),
+          "/register": exitDown(header),
+        }}
       />
 
       <Route
-        path="/1"
-        component={<>Page 1</>}
+        path="/log-in"
+        component={<LogIn />}
+        enterAnimation={{
+          "/": enterDown,
+          'default': enterRight,
+        }}
+        exitAnimation={{
+          "/": exitUp,
+          'default': exitRight,
+        }}
       />
 
       <Route
-        path="/2"
-        component={<>Page 2</>}
+        path="/register"
+        component={<Register />}
+        enterAnimation={{
+          "/": enterDown,
+          'default': enterRight,
+        }}
+        exitAnimation={{
+          "/": exitUp,
+          'default': exitRight,
+        }}
       />
 
       <Route
-        path="/3"
-        component={<>Page 3</>}
-      />
-
-      Data XDDD
+        path="/reset-password"
+        component={<ResetPassword />}
+        enterAnimation={enterRight}
+        exitAnimation={exitRight}
+      />      
     </Navigation>
   );
 }

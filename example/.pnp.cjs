@@ -38,12 +38,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:12.8.3"],
+            ["@types/gsap", "npm:3.0.0"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:12.20.33"],
             ["@types/react", "npm:17.0.31"],
             ["@types/react-dom", "npm:17.0.10"],
             ["animated-router-react", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#portal:..::locator=example%40workspace%3A."],
             ["eslint-config-react-app", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:6.0.0"],
+            ["gsap", "npm:3.8.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:17.0.2"],
             ["react-scripts", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:4.0.3"],
@@ -4913,6 +4915,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/graceful-fs", "npm:4.1.5"],
             ["@types/node", "npm:14.14.31"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/gsap", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@types-gsap-npm-3.0.0-fef431ee14-dae482196e.zip/node_modules/@types/gsap/",
+          "packageDependencies": [
+            ["@types/gsap", "npm:3.0.0"],
+            ["gsap", "npm:3.8.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9961,12 +9973,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:12.8.3"],
+            ["@types/gsap", "npm:3.0.0"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:12.20.33"],
             ["@types/react", "npm:17.0.31"],
             ["@types/react-dom", "npm:17.0.10"],
             ["animated-router-react", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#portal:..::locator=example%40workspace%3A."],
             ["eslint-config-react-app", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:6.0.0"],
+            ["gsap", "npm:3.8.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:17.0.2"],
             ["react-scripts", "virtual:c081f9d5482fb2e2c0e716349b5c5ca8ef400ad3924e1f054f3db29a76c8b170838d38866b4115dca50fd9beafe162d478736cf49aa475def195254f9a228a41#npm:4.0.3"],
@@ -10894,6 +10908,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/growly-npm-1.3.0-b3a02d4d2a-53cdecd4c1.zip/node_modules/growly/",
           "packageDependencies": [
             ["growly", "npm:1.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["gsap", [
+        ["npm:3.8.0", {
+          "packageLocation": "./.yarn/cache/gsap-npm-3.8.0-d52085651d-db7ca05441.zip/node_modules/gsap/",
+          "packageDependencies": [
+            ["gsap", "npm:3.8.0"]
           ],
           "linkType": "HARD",
         }]
