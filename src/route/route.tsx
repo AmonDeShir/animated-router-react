@@ -10,16 +10,9 @@ type Props = {
   component: JSX.Element;
   enterAnimation?: TypedMap<Animation> | Animation;
   exitAnimation?: TypedMap<Animation> | Animation;
-  prepare?: string[];
 };
 
-const Route = ({
-  path,
-  component,
-  enterAnimation,
-  exitAnimation,
-  prepare = [],
-}: Props) => {
+const Route = ({ path, component, enterAnimation, exitAnimation }: Props) => {
   const ref = useRef<HTMLElement>(null);
   const { hidden } = useAnimationRunner(path, ref);
   const { dispatch } = useContext(NavigationContext);
@@ -32,7 +25,6 @@ const Route = ({
         path,
         enterAnimation: animationMap(enterAnimation),
         exitAnimation: animationMap(exitAnimation),
-        prepare,
       },
     });
 

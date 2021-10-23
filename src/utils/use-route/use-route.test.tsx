@@ -26,7 +26,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
       [
@@ -36,7 +35,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
     ]);
@@ -49,7 +47,6 @@ describe(`utils/navigation/useRoute`, () => {
       component: <></>,
       enterAnimation: new Map(),
       exitAnimation: new Map(),
-      prepare: [],
     });
   });
 
@@ -62,7 +59,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
       [
@@ -72,7 +68,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
     ]);
@@ -99,7 +94,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
       [
@@ -109,7 +103,6 @@ describe(`utils/navigation/useRoute`, () => {
           component: <></>,
           enterAnimation: new Map(),
           exitAnimation: new Map(),
-          prepare: [],
         },
       ],
     ]);

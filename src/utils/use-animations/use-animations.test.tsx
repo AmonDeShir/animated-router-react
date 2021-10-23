@@ -32,7 +32,6 @@ const routes = new Map<string, Route>([
         ['default', { time: 15, animation }],
         ['/exit-test', { time: 10, animation }],
       ]),
-      prepare: [],
     },
   ],
 ]);

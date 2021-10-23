@@ -17,7 +17,6 @@ describe('navigation reducer test', () => {
     component: React.createElement('div'),
     enterAnimation: new Map([['default', { animation: () => {}, time: 0.1 }]]),
     exitAnimation: new Map([['default', { animation: () => {}, time: 0.1 }]]),
-    prepare: [],
   };
 
   it(`shouldn't change state if action.type is incorrect`, () => {

@@ -18,7 +18,6 @@ export type Route = {
   component: JSX.Element;
   enterAnimation: Map<string, Animation>;
   exitAnimation: Map<string, Animation>;
-  prepare: string[];
 };
 
 export type State = {

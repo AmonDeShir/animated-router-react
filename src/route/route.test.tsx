@@ -39,7 +39,6 @@ describe(`Route`, () => {
         path: '/',
         enterAnimation: new Map([['default', animation]]),
         exitAnimation: new Map([['default', animation]]),
-        prepare: [],
       },
     });
   });
@@ -77,7 +76,6 @@ describe(`Route`, () => {
         path: '/',
         enterAnimation: new Map(),
         exitAnimation: new Map(),
-        prepare: [],
       },
     });
   });
