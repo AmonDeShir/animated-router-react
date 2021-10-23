@@ -2,7 +2,7 @@ import { useContext, useMemo } from 'react';
 
 import { NavigationContext } from '../../reducer/context/navigation-context';
 
-const useDecodedNavigationArgument = <T = any>() => {
+const useNavigationArgument = <T = any>() => {
   const { argument } = useContext(NavigationContext).state;
 
   const decodedArgument = useMemo(() => {
@@ -26,4 +26,4 @@ const useDecodedNavigationArgument = <T = any>() => {
   return decodedArgument;
 };
 
-export default useDecodedNavigationArgument;
+export default useNavigationArgument;
