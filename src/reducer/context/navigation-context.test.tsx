@@ -1,5 +1,6 @@
+import { fireEvent, render } from '@testing-library/react';
 import { renderHook, act } from '@testing-library/react-hooks';
-import { useContext } from 'react';
+import { useContext, useReducer } from 'react';
 
 import NavigationProvider, { NavigationContext } from './navigation-context';
 
@@ -50,5 +51,34 @@ describe(`NavigationContext`, () => {
       previousPath: null,
       argument: '',
     });
+  });
+
+  it(`should dispatch SELECT action after popstate event`, async () => {
+    const original = useReducer;
+    const dispatch = jest.fn();
+
+    (useReducer as any) = (_: any, state: any) => [state, dispatch];
+
+    const { container } = render(<NavigationProvider />);
+
+    window.location.pathname = '/test2';
+
+    fireEvent(
+      container,
+      new PopStateEvent('popstate', {
+        bubbles: true,
+        cancelable: true,
+      }),
+    );
+
+    expect(dispatch).toBeCalledWith({
+      type: 'SELECT',
+      payload: {
+        path: '/test2',
+        updateHistory: false,
+      },
+    });
+
+    (useReducer as any) = original;
   });
 });
