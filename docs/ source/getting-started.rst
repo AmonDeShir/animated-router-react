@@ -1,12 +1,10 @@
-Usage
-=====
-
-.. _installation:
+Getting Started
+===============
 
 Installation
 ------------
 
-Just download the package using your favourite package manager.
+Just download the package using your favorite package manager.
 
 Yarn
 
