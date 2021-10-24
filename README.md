@@ -13,9 +13,7 @@ Animated Router is a routing library for React that allow you to customize trans
 So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations or just a pure javascript.
 
 https://user-images.githubusercontent.com/13831258/138578047-970df057-8df0-426e-8e8c-64e5912c855f.mp4
-# Getting Started
-
-## Installation
+# Installation
 Just download the package using your favourite package manager.
 
 Yarn
@@ -27,13 +25,13 @@ Npm
 npm install animated-router-react
 ```
 
-## Links
+# Links
 Here are some useful  links:
 - Getting started guide: WIP
 - Example project: https://github.com/AmonDeShir/animated-router-react-example
 - Documentation: WIP
 
-## Features
+# Features
 - [x] Routing
 - [x] Links
 - [x] Page arguments
@@ -42,7 +40,7 @@ Here are some useful  links:
 - [x] Customisable 404 page
 - [ ] Guardians
 
-## Contributions
+# Contributions
 All contributions are welcomed.
 
 1. Fork and clone the repo to your local machine `git clone https://github.com/YOUR_GITHUB_USERNAME/animated-router-react.git`
@@ -55,8 +53,8 @@ All contributions are welcomed.
 
 In case you have any questions about a feature you want to develop of something you're not sure how to do, you can still create a draft pull request to discuss the implementation details.
 
-### Coding style
+## Coding style
 Please follow the coding style of the project. Animated Router uses eslint and prettier. If possible, enable their respective plugins in your editor to get real-time feedback. The linting can be run manually with the following command: `yarn lint`.
 
-### License
+## License
 By contributing your code to the animated-router-react GitHub repository, you agree to license your contribution under the MIT license.
