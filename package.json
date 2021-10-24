@@ -4,7 +4,14 @@
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
+  "description": "Animated Router is a routing library for React that allow you to customize transitions between your pages.",
+  "keywords": ["react", "router", "react-library", "routing", "animations", "animation-css"],
+  "homepage": "https://github.com/AmonDeShir/animated-router-react/blob/main/README.md",
   "repository": "https://github.com/AmonDeShir/react-animated-router",
+  "bugs": {
+    "url": "https://github.com/AmonDeShir/react-animated-router/issues",
+    "email": "amonsir29@gmail.com"
+  },
   "author": "Dominik Purgał <amonsir29@gmail.com>",
   "license": "MIT",
   "files": [
