@@ -50,7 +50,7 @@ All contributions are welcomed.
 In case you have any questions about a feature you want to develop of something you're not sure how to do, you can still create a draft pull request to discuss the implementation details.
 
 ### Coding style
-Please follow the coding style of the project. Aimated Router uses eslint and prettier. If possible, enable their respective plugins in your editor to get real-time feedback. The linting can be run manually with the following command: `yarn lint`.
+Please follow the coding style of the project. Animated Router uses eslint and prettier. If possible, enable their respective plugins in your editor to get real-time feedback. The linting can be run manually with the following command: `yarn lint`.
 
 ### License
 By contributing your code to the animated-router-react GitHub repository, you agree to license your contribution under the MIT license.
