@@ -14,7 +14,7 @@ So to create your animations, you can use whatever you want, for example, a powe
 
 https://user-images.githubusercontent.com/13831258/138578047-970df057-8df0-426e-8e8c-64e5912c855f.mp4
 # Installation
-Just download the package using your favourite package manager.
+Just download the package using your favorite package manager.
 
 Yarn
 ```
