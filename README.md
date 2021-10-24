@@ -34,7 +34,13 @@ Here are some useful  links:
 - Documentation: WIP
 
 ## Features
-
+- [x] Routing
+- [x] Links
+- [x] Page arguments
+- [x] Animated transitions
+- [x] History api support
+- [x] Customisable 404 page
+- [ ] Guardians
 
 ## Contributions
 All contributions are welcomed.
