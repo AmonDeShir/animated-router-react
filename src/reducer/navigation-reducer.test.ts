@@ -35,9 +35,6 @@ describe('navigation reducer test', () => {
     });
 
     expect(result.routes.get('/test')).toEqual(route);
-    expect(result.selected).toBeNull();
-    expect(result.selectPath).toBe('/');
-    expect(result.argument).toBe('');
   });
 
   it('should add default route to state', () => {
@@ -52,9 +49,6 @@ describe('navigation reducer test', () => {
     });
 
     expect(result.routes.get('/')).toEqual(defaultRoute);
-    expect(result.selected).toEqual(defaultRoute);
-    expect(result.selectPath).toBe('/');
-    expect(result.argument).toBe('');
   });
 
   it('should throw error if second route with the same name was added', () => {
@@ -121,7 +115,6 @@ describe('navigation reducer test', () => {
 
     expect(result.selected).toEqual(route);
     expect(result.selectPath).toBe('/test');
-    expect(result.previousPath).toBe('/');
   });
 
   it('should select null if route to select not exist', () => {
@@ -132,7 +125,6 @@ describe('navigation reducer test', () => {
 
     expect(result.selected).toBeNull();
     expect(result.selectPath).toBe('/notExist');
-    expect(result.previousPath).toBe('/');
   });
 
   it('should select route with argument', () => {
@@ -143,8 +135,24 @@ describe('navigation reducer test', () => {
 
     expect(result.selected).toEqual(route);
     expect(result.selectPath).toBe('/test');
-    expect(result.previousPath).toBe('/');
     expect(result.argument).toBe('2');
+  });
+
+  it(`should select route and update history`, () => {
+    const result = navigationReducer(
+      { ...initialState, routes: new Map([['/test2', route]]) },
+      {
+        type: 'SELECT',
+        payload: {
+          path: '/test2',
+          updateHistory: true,
+        },
+      },
+    );
+
+    expect(result.selected).toEqual(route);
+    expect(result.selectPath).toBe('/test2');
+    expect(window.history.state).toEqual('/test2');
   });
 
   it(`should set previous path to selected path`, () => {
@@ -216,7 +224,6 @@ describe('navigation reducer test', () => {
     );
 
     expect(result.routes).toEqual(new Map([['/2', route2]]));
-    expect(result.selectPath).toEqual('/test');
     expect(result.selected).toEqual(null);
   });
 });

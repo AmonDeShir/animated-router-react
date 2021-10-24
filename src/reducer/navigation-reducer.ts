@@ -73,9 +73,7 @@ function selectRoute(
   state: State,
   payload: string | { path: string; updateHistory: boolean },
 ): State {
-  const path = typeof payload === 'string' ? payload : payload.path;
-  const shouldUpdateHistory =
-    typeof payload === 'string' ? true : payload.updateHistory;
+  const { path, shouldUpdateHistory } = parseSelectRoutePayload(payload);
   const { selectPath, argument } = parsePath(path);
 
   if (shouldUpdateHistory) {
@@ -91,6 +89,22 @@ function selectRoute(
       : state.selectPath,
     selectPath,
     argument,
+  };
+}
+
+function parseSelectRoutePayload(
+  payload: string | { path: string; updateHistory: boolean },
+) {
+  if (typeof payload === 'string') {
+    return {
+      path: payload,
+      shouldUpdateHistory: true,
+    };
+  }
+
+  return {
+    path: payload.path,
+    shouldUpdateHistory: payload.updateHistory,
   };
 }
 
