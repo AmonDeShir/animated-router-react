@@ -13,6 +13,9 @@
 !.yarn/sdks
 !.yarn/versions
 
+#build
+/lib
+
 #example
 /example/.yarn/*
 !/example/.yarn/cache

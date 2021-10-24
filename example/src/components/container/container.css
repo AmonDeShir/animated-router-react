@@ -1,9 +1,0 @@
-.container {
-  background-color: var(--primary-color);
-  width: 100%;
-  height: calc(100% - var(--background-size) - 50px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
