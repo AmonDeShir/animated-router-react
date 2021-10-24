@@ -7,7 +7,11 @@ Installation
 Just download the package using your favorite package manager.
 
 .. tabs::
-   .. group-tab:: Yarn
+
+   .. tab:: Yarn
+
       $ yarn add animated-router-react
-   .. group-tab:: npm
+
+   .. tab:: Npm
+
       $ npm install animated-router-react
