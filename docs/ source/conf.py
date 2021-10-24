@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinxcontrib.video',
+    'sphinxcontrib.osexample',
 ]
 
 intersphinx_mapping = {
