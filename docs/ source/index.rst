@@ -1,22 +1,23 @@
-Welcome to Lumache's documentation!
+Welcome to the documentation of the Animated Router!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Animated Router** is a routing library for React that allow you to customize transitions between your pages. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations or just a pure javascript.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`getting-started` section for further information, including
+how to :ref:`installation` the library.
 
 .. note::
-
    This project is under active development.
 
 Contents
 --------
 
 .. toctree::
-
-   usage
+   getting-started
+   routing
+   links
+   404-page
+   page-arguments
+   transitions
+   guardians
    api
