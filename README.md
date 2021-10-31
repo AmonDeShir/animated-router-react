@@ -9,12 +9,12 @@ Icon made by [smalllikeart](https://www.flaticon.com/authors/smalllikeart) from 
 [![Documentation](https://img.shields.io/badge/Documentation-WIP-brightgreen.svg?style=for-the-badge)](https://animated-router.readthedocs.io/en/latest/)
 [![Unicorn](https://img.shields.io/badge/unicorn-approved-ff69b4?style=for-the-badge)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
 
-**Animated Router** is a routing library for React that allow you to customize transitions between your pages. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. 
-So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations or just a pure javascript.
+**Animated Router** is a routing library for React. With it doing page transitions stop being such an inconvenience. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. 
+So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations, or just a pure javascript.
 
 https://user-images.githubusercontent.com/13831258/138578047-970df057-8df0-426e-8e8c-64e5912c855f.mp4
 # Installation
-Just download the package using your favorite package manager.
+Download the package using your favorite package manager.
 
 Yarn
 ```
