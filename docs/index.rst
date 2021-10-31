@@ -5,7 +5,7 @@ Welcome to the documentation of the Animated Router!
   :width: 690
   :alt: Logo
 
-**Animated Router** is a routing library for React that allow you to customize transitions between your pages. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations or just a pure javascript.
+**Animated Router** Animated Router is a routing library for React. With it doing page transitions stop being such an inconvenience. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. So to create your animations, you can use whatever you want, for example, a powerful library like GSAP, CSS transitions or animations, or just a pure javascript.
 
 .. video:: https://user-images.githubusercontent.com/13831258/138578047-970df057-8df0-426e-8e8c-64e5912c855f.mp4
    :width: 690
