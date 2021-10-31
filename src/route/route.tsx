@@ -2,20 +2,30 @@ import React, { useContext, useEffect, useRef } from 'react';
 
 import animationMap from '../utils/animation-map/animation-map';
 import useAnimationRunner from '../utils/use-animation-runner/use-animation-runner';
+import useApplyDefaultState from '../utils/use-apply-default-state/use-apply-default-state';
 import { NavigationContext } from '../reducer/context/navigation-context';
-import { Animation, TypedMap } from '../reducer/types';
+import { Animation, InitFunction, TypedMap } from '../reducer/types';
 
 type Props = {
   path: string;
   component: JSX.Element;
+  init?: InitFunction;
   enterAnimation?: TypedMap<Animation> | Animation;
   exitAnimation?: TypedMap<Animation> | Animation;
 };
 
-const Route = ({ path, component, enterAnimation, exitAnimation }: Props) => {
+const Route = ({
+  path,
+  component,
+  init,
+  enterAnimation,
+  exitAnimation,
+}: Props) => {
   const ref = useRef<HTMLElement>(null);
   const { hidden } = useAnimationRunner(path, ref);
   const { dispatch } = useContext(NavigationContext);
+
+  useApplyDefaultState(ref);
 
   useEffect(() => {
     dispatch({
@@ -23,6 +33,7 @@ const Route = ({ path, component, enterAnimation, exitAnimation }: Props) => {
       payload: {
         component,
         path,
+        init,
         enterAnimation: animationMap(enterAnimation),
         exitAnimation: animationMap(exitAnimation),
       },

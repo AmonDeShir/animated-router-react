@@ -12,6 +12,7 @@ describe(`NavigationContext`, () => {
       routes: new Map(),
       selected: null,
       selectPath: '/',
+      initPath: '/',
       previousPath: null,
       argument: '',
     });
@@ -47,6 +48,7 @@ describe(`NavigationContext`, () => {
     expect(result.current.state).toEqual({
       routes: new Map(),
       selected: null,
+      initPath: '/',
       selectPath: '/',
       previousPath: null,
       argument: '',

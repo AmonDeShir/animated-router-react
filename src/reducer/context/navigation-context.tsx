@@ -13,6 +13,7 @@ const defaultState = {
   routes: new Map(),
   selected: null,
   selectPath: window.location.pathname,
+  initPath: window.location.pathname,
   previousPath: null,
   argument: '',
 };

@@ -8,7 +8,7 @@ const dispatch = jest.fn();
 const renderRoute = (path: string) => (element: JSX.Element) =>
   render(
     <NavigationContext.Provider
-      value={{ dispatch, state: { selectPath: path } as any }}
+      value={{ dispatch, state: { selectPath: path, initPath: path } as any }}
     >
       {element}
     </NavigationContext.Provider>,
@@ -22,11 +22,13 @@ describe(`Route`, () => {
 
   it(`should call add action with: path, component and animations from props`, () => {
     const animation = { animation: () => {}, time: 0 };
+    const init = () => {};
 
     renderRoute('/')(
       <Route
         component={<div />}
         path="/"
+        init={init}
         enterAnimation={animation}
         exitAnimation={animation}
       />,
@@ -37,6 +39,7 @@ describe(`Route`, () => {
       payload: {
         component: <div />,
         path: '/',
+        init,
         enterAnimation: new Map([['default', animation]]),
         exitAnimation: new Map([['default', animation]]),
       },

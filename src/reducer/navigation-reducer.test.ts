@@ -8,6 +8,7 @@ describe('navigation reducer test', () => {
     routes: new Map<string, Route>(),
     selected: null,
     previousPath: null,
+    initPath: '/',
     selectPath: '/',
     argument: '',
   };

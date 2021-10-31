@@ -28,13 +28,16 @@ function addRoute(state: State, route: Route): State {
   throwErrorIfPathHasIncorrectFormat(route.path);
 
   let resultState = { ...state };
+  let { initPath } = state;
 
   if (isDefaultSelectedRoute(route.path)) {
     resultState = selectDefaultSelectedRoute(resultState, route);
+    initPath = route.path;
   }
 
   return {
     ...resultState,
+    initPath,
     routes: new Map([...state.routes, [route.path, route]]),
   };
 }
