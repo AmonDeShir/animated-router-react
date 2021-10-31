@@ -35,45 +35,46 @@ Basic Routing
 
 Add the ``Navigation`` tag to your App component.
 
- .. code-block JSX
+ .. code-block:: jsx
  			import Navigation from 'animated-router-react';
  
-				function App() {
-		  		return (
+			function App() {
+		  	return (
 	 	   		<Navigation>
  	 	  		</Navigation>
-  				);
-					}
+  			);
+			}
 
-				export default App;
+			export default App;
 
 Next, add some Routes.
 
- .. code-block JSX
- 			import Navigation, { Route } from 'animated-router-react';
+ .. code-block:: jsx
+ 	
+	 	import Navigation, { Route } from 'animated-router-react';
  			
- 			function App() {
-		  		return (
-	 	   		<Navigation>
-	 	   				<Route
-        				path="/"
-        				component={<>Main</>}
-     					/>
+ 		function App() {
+		  return (
+	 	   	<Navigation>
+	 	   		<Route
+        		path="/"
+        		component={<>Main</>}
+     			/>
      					
-     					<Route
-        				path="/page1"
-        				component={<>Page 1</>}
-     					/>
+     			<Route
+        		path="/page1"
+        		component={<>Page 1</>}
+     			/>
      					
-     					<Route
-        				path="/page2"
-        				component={<>Page 2</>}
-     					/>
- 	 	  		</Navigation>
-  				);
-					}
+     			<Route
+      			path="/page2"
+      			component={<>Page 2</>}
+   				/>
+ 	  		</Navigation>
+			);
+		}
 
-				export default App;
+		export default App;
 
 The ``Route`` component has two required properties.
 1. ``path`` is a  property that defines your component address. For example, when you write in your address bar ``localhost:3000/page1`` route with path ``page-1`` will be displayed. The path should be a valid URL path. There are also two special paths reserved': ``/`` and ``/404``.
@@ -90,48 +91,48 @@ Ok, let's add some links to your application.
 
  .. code-block JSX
  			
- 		 import Navigation, { Route, Link } from 'animated-router-react';
+ 		import Navigation, { Route, Link } from 'animated-router-react';
  			
- 			function App() {
-		  		return (
-	 	   		<Navigation>
-	 	   				<Route
-        				path="/"
-        				component={(
-        						<>
-        								Main
-        								<Link to="/page1">Go to page 1</Link>
-        								<Link to="/page2">Go to page 2</Link>
-        			   </>
-        				)}
-     					/>
+ 		function App() {
+		  return (
+	 	   	<Navigation>
+	 	   		<Route
+        		path="/"
+        		component={(
+        			<>
+        				Main
+        				<Link to="/page1">Go to page 1</Link>
+        				<Link to="/page2">Go to page 2</Link>
+        			</>
+        		)}
+     			/>
      					
-     					<Route
-        				path="/page1"
-        				component={(
-        				  <>
-        				    Page 1
-        				    <Link to="/1">Go to main page</Link>
-        								<Link to="/page2">Go to page 2</Link>
-        				  </>
-        				)}
-     					/>
+     			<Route
+        		path="/page1"
+        		component={(
+        			<>
+        			  Page 1
+        			  <Link to="/1">Go to main page</Link>
+        				<Link to="/page2">Go to page 2</Link>
+        			</>
+        		)}
+     			/>
      					
-     					<Route
-        				path="/page2"
-        				component={(
-        						<>
-        								Page 2
-        								<Link to="/">Go to main page</Link>
-        								<Link to="/page1">Go to page 1</Link>
-        						</>
-        				)}
-     					/>
- 	 	  		</Navigation>
-  				);
-					}
+     			<Route
+        		path="/page2"
+        		component={(
+        			<>
+        				Page 2
+        				<Link to="/">Go to main page</Link>
+        				<Link to="/page1">Go to page 1</Link>
+        			</>
+        		)}
+     			/>
+ 	 	  	</Navigation>
+  		);
+		}
 
-				export default App;
+		export default App;
 				
 ``Link`` it's a simple link component.
 It has one required prop ``to``, Thats define where you will be redirected if you click a link.
@@ -145,77 +146,76 @@ Links in our pages are very simlar. So move it outside to simplyfy our code.
 
  .. code-block JSX
  			
- 		 import Navigation, { Route, Link } from 'animated-router-react';
+ 		import Navigation, { Route, Link } from 'animated-router-react';
  			
- 			function App() {
-		  		return (
-	 	   		<Navigation>
-	 	   		  <nav>
-	 	   		  		<Link to="/">Go to main page</Link>
-        				<Link to="/page1">Go to page 1</Link>
-	 	   		    <Link to="/page2">Go to page 2</Link>
-	 	   		  </nav>
+ 		function App() {
+		  return (
+	 	   	<Navigation>
+	 	   		<nav>
+	 	   		  <Link to="/">Go to main page</Link>
+        		<Link to="/page1">Go to page 1</Link>
+	 	   		  <Link to="/page2">Go to page 2</Link>
+	 	   		</nav>
 	 	   		
-	 	   				<Route
-        				path="/"
-        				component={<>Main</>}
-     					/>
+	 	   		<Route
+        		path="/"
+        		component={<>Main</>}
+     			/>
      					
-     					<Route
-        				path="/page1"
-        				component={(<>Page 1</>}
-     					/>
+     			<Route
+        		path="/page1"
+        		component={(<>Page 1</>}
+     			/>
      					
-     					<Route
-        				path="/page2"
-        				component={<>Page 2</>}
-     					/>
- 	 	  		</Navigation>
-  				);
-					}
+     			<Route
+        		path="/page2"
+        		component={<>Page 2</>}
+     			/>
+ 	 	  	</Navigation>
+  		);
+		}
 
-				export default App;
+		export default App;
 				
-
 
 All JSX components thats aren't <Route /> will be ignored and in result display normaly. 
 
 Ok, now let's add footer in the same way.
  .. code-block JSX
  			
- 		 import Navigation, { Route, Link } from 'animated-router-react';
+ 		import Navigation, { Route, Link } from 'animated-router-react';
  			
- 			function App() {
-		  		return (
-	 	   		<Navigation>
-	 	   		  <nav>
-	 	   		  		<Link to="/">Go to main page</Link>
-        				<Link to="/page1">Go to page 1</Link>
-	 	   		    <Link to="/page2">Go to page 2</Link>
-	 	   		  </nav>
+ 		function App() {
+		  return (
+	 	  	<Navigation>
+	 	   		<nav>
+	 	   				<Link to="/">Go to main page</Link>
+        			<Link to="/page1">Go to page 1</Link>
+	 	   		  <Link to="/page2">Go to page 2</Link>
+	 	   		</nav>
 	 	   		
-	 	   				<Route
-        				path="/"
-        				component={<>Main</>}
-     					/>
+	 	   		<Route
+        		path="/"
+        		component={<>Main</>}
+     			/>
      					
-     					<Route
-        				path="/page1"
-        				component={(<>Page 1</>}
-     					/>
+     			<Route
+        		path="/page1"
+        		component={(<>Page 1</>}
+     			/>
      					
-     					<Route
-        				path="/page2"
-        				component={<>Page 2</>}
-     					/>
+     			<Route
+        		path="/page2"
+        		component={<>Page 2</>}
+     			/>
      					
-     					<footer>© Someone 2077</footer>
- 	 	  		</Navigation>
-  				);
-					}
+     			<footer>© Someone 2077</footer>
+ 	 	  	</Navigation>
+  		);
+		}
 
-				export default App;
-				
+		export default App;
+
 Styling
 -------
 

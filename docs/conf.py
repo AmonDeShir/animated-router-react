@@ -18,6 +18,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.video',
     'sphinx_tabs.tabs',
+    'jsx-lexer'
 ]
 
 intersphinx_mapping = {
