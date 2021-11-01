@@ -6,7 +6,7 @@ Icon made by [smalllikeart](https://www.flaticon.com/authors/smalllikeart) from 
 
 [![NPM](https://img.shields.io/npm/v/animated-router-react?style=for-the-badge)](https://www.npmjs.com/package/animated-router-react)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/AmonDeShir/animated-router-react/blob/main/LICENSE)
-[![Documentation](https://img.shields.io/badge/Documentation-WIP-brightgreen.svg?style=for-the-badge)](https://animated-router.readthedocs.io/en/latest/)
+[![Documentation](https://img.shields.io/badge/Documentation-Github-brightgreen.svg?style=for-the-badge)](https://github.com/AmonDeShir/animated-router-react/wiki)
 [![Unicorn](https://img.shields.io/badge/unicorn-approved-ff69b4?style=for-the-badge)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
 
 **Animated Router** is a routing library for React. With it doing page transitions stop being such an inconvenience. Animated Router is simple to use and flexible. Your transitions are just a JavaScript function that gives you a reference to your page (forward ref react component) as an argument. 
@@ -27,9 +27,9 @@ npm install animated-router-react
 
 # Links
 Here are some useful  links:
-- Getting started guide: [WIP](https://animated-router.readthedocs.io/en/latest/getting-started.html)
+- Getting started guide: [WIP](https://github.com/AmonDeShir/animated-router-react/wiki/Getting-Started)
 - Example project: [https://github.com/AmonDeShir/animated-router-react-example](https://github.com/AmonDeShir/animated-router-react-example)
-- Documentation: [WIP](https://animated-router.readthedocs.io/en/latest/)
+- Documentation: [WIP](https://github.com/AmonDeShir/animated-router-react/wiki/Getting-Started)
 
 # Features
 - [x] Routing
