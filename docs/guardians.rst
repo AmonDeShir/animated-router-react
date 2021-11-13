@@ -1,4 +1,0 @@
-Guardians
-=========
-
-WIP
