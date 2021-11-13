@@ -6,12 +6,10 @@ Use ``Create React App`` to create one.
 .. tabs::
 
 		.. tab:: Yarn
-
   			$ yarn create react-app demo-app
     		$ cd ./demo-app
 
 		.. tab:: Npx
-
     		$ npx create-react-app demo-app
     		$ cd ./demo-appo
 
@@ -40,9 +38,9 @@ Add the ``Navigation`` tag to your App component.
 		import Navigation from 'animated-router-react';
  
 		function App() {
-			return (
-	 	  	<Navigation>
- 	 	  	</Navigation>
+		  return (
+	 	    <Navigation>
+ 	 	    </Navigation>
   		);
 		}
 
@@ -184,7 +182,7 @@ Ok, now let's add footer in the same way.
 
 .. code-block:: jsx
  			
-		import Navigation, { Route, Link } from 'animated-router-react';
+    import Navigation, { Route, Link } from 'animated-router-react';
  			
  		function App() {
 		  return (
